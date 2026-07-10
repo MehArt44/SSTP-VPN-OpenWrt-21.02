@@ -74,6 +74,7 @@ public-vpn-217.opengw.net:443
 SSTP Port: مقدار 443 (یا پورت‌های ۹۹۵ و ۱۳۲۱ بسته به سرور انتخابی)
 
 username: vpn
+
 password: vpn
 
 ---
