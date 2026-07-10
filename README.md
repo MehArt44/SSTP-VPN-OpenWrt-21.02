@@ -60,23 +60,30 @@ reboot
 
 > **نکته:** پس از بالا آمدن روتر، با فشردن کلیدهای `Ctrl + F5` کش مرورگر خود را نیز خالی کنید. اکنون می‌توانید با مراجعه به منوی Interfaces، مشخصات سرور، یوزرنیم و پسورد SSTP خود را وارد کنید.
 
-🔹 تنظیمات عمومی (General Settings)
+### تنظیمات عمومی (General Settings)
 Protocol: گزینه SSTP
 
-SSTP Server: یک آدرس سرور از سایت VPNGate انتخاب کنید یا از لیست تست‌شده زیر قرار دهید:
-
-public-vpn-0.opengw.net
-
-public-vpn-151.opengw.net
-
-public-vpn-184.opengw.net
-
-public-vpn-217.opengw.net
+SSTP Server: یک آدرس سرور از سایت
+VPNGate.net انتخاب کنید یا از لیست تست‌شده زیر قرار دهید:
+یا
+public-vpn-0.opengw.net:443
+public-vpn-151.opengw.net:443
+public-vpn-184.opengw.net:443
+public-vpn-217.opengw.net:443
 
 SSTP Port: مقدار 443 (یا پورت‌های ۹۹۵ و ۱۳۲۱ بسته به سرور انتخابی)
 
 username: vpn
 password: vpn
+
 ---
 اکثر سرور ها SSTP با پورت 443 کار میکنند اگر خواستید گزینه پورت را به LUCI اضافه کنید فایل جیسون sstp.js به این آدرس در روتر منتقل کنید
 /www/luci-static/resources/protocol/
+_____________________________________________
+
+راهنمایی ساخت اینترفیس
+Network
+Interfaces » Add new interface » SSTP_VPN
+ 
+<img width="1786" height="2598" alt="SSTP VPN" src="https://github.com/user-attachments/assets/a1b548a5-f062-4d19-8141-50ff77e1daa1" />
+
