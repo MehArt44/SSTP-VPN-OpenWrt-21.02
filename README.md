@@ -65,6 +65,8 @@ Protocol: گزینه SSTP
 
 SSTP Server: یک آدرس سرور از سایت
 VPNGate.net انتخاب کنید یا از لیست تست‌شده زیر قرار دهید:
+
+```bash
 یا
 public-vpn-0.opengw.net:443
 public-vpn-151.opengw.net:443
@@ -74,10 +76,8 @@ public-vpn-217.opengw.net:443
 SSTP Port: مقدار 443 (یا پورت‌های ۹۹۵ و ۱۳۲۱ بسته به سرور انتخابی)
 
 username: vpn
-
 password: vpn
-
----
+```
 اکثر سرور ها SSTP با پورت 443 کار میکنند اگر خواستید گزینه پورت را به LUCI اضافه کنید فایل جیسون sstp.js به این آدرس در روتر منتقل کنید
 /www/luci-static/resources/protocol/
 _____________________________________________
